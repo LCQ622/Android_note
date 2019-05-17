@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea">
+
+
+    <EditText
+        android:id="@+id/ed_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:hint="写点什么吧..."
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:drawableLeft="@drawable/ic_add_black_24dp"
+        android:text="添加"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ed_msg"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@id/tv"
+       android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+</RelativeLayout>
+
